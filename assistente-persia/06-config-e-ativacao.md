@@ -22,7 +22,7 @@ Habilitar e garantir no `enabled_tools` do flow:
 > **Agendamento = agenda NATIVA da plataforma (não Google Calendar).** `offer_appointment_slots`
 > manda os horários como **menu interativo** no WhatsApp; o lead **toca** e o agendamento é feito
 > sozinho (booking determinístico — não reconfirme). Se houver mais de um especialista, o menu
-> pergunta o profissional primeiro. **Pré-requisito na org:** ter o serviço `demonstracao` em
+> pergunta o profissional primeiro. **Pré-requisito na org:** ter o serviço `reuniao` em
 > `agenda_services` + `availability_rules` (horários) configurados — e `user_services` se for
 > multi-especialista. **Não** precisa de `calendar_connection_id` (isso é só do `schedule_event`/Google).
 
@@ -50,9 +50,9 @@ Habilitar e garantir no `enabled_tools` do flow:
 `max_iterations`: 5 · `timeout_seconds`: 30 · `cost_ceiling_tokens`: 20000 · `allow_human_handoff`: ligado
 
 ## Pré-requisitos do ambiente (no seu CRM)
-- **Agenda nativa:** serviço `demonstracao` cadastrado em `agenda_services` + `availability_rules`
+- **Agenda nativa:** serviço `reuniao` cadastrado em `agenda_services` + `availability_rules`
   (horários) definidos. Se houver mais de um especialista, adicionar cada um em `user_services`
-  pro serviço `demonstracao` (o menu de profissional aparece sozinho). **Sem** Google Calendar.
+  pro serviço `reuniao` (o menu de profissional aparece sozinho). **Sem** Google Calendar.
 - `new_lead_stage_id` → stage do funil pra lead novo
 - `on_appointment_created_stage_id` → stage quando a demo é agendada
 
@@ -73,7 +73,7 @@ Habilitar e garantir no `enabled_tools` do flow:
 ## 3. Config + tools
 - [ ] Modelo, escopo, `is_primary`, debounce, humanização, validação, followups, guardrails (valores acima).
 - [ ] Liberar as tools no `enabled_tools` do **canvas** e salvar o canvas.
-- [ ] **Agenda nativa:** serviço `demonstracao` em `agenda_services` + `availability_rules` (e `user_services` se multi-especialista) + os 2 stages do funil.
+- [ ] **Agenda nativa:** serviço `reuniao` em `agenda_services` + `availability_rules` (e `user_services` se multi-especialista) + os 2 stages do funil.
 
 ## 4. Testar (Simulador)
 - [ ] Diálogo: abertura → qualificação (3 critérios) → valor → tentativa de agendamento → fora do escopo (peça "quero falar com uma pessoa" e confirme o `stop_agent`).

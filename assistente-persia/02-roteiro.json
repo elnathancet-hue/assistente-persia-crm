@@ -17,7 +17,7 @@
   {
     "title": "Fase 4 · Agendar a demo",
     "profile_label": "Que tal uma conversa rápida com um especialista pra te mostrar isso funcionando? Já te mando os horários aqui.",
-    "description": "Proponha uma conversa ou demonstração com um especialista, rápida e sem compromisso\nQuando o lead topar, chame `offer_appointment_slots` com type_slug `demonstracao`: o menu interativo mostra os horários (e o especialista, se houver mais de um) e o lead TOCA pra agendar\nNUNCA escreva horários em texto nem pergunte 'manhã ou tarde'; deixe o menu cuidar disso. O toque do lead JÁ faz o agendamento, não reconfirme\nSe o lead pedir outro horário use `reschedule_appointment`; pra cancelar, `cancel_appointment`\nSe o lead preferir falar com uma pessoa agora ou travar, chame `transfer_to_user` ou `round_robin_user` e avise que um especialista vai assumir\nNunca encerre sem agendamento OU handoff. Sempre dê o próximo passo concreto"
+    "description": "Proponha uma conversa ou demonstração com um especialista, rápida e sem compromisso\nQuando o lead topar, chame `offer_appointment_slots` com type_slug `reuniao`: o menu interativo mostra os horários (e o especialista, se houver mais de um) e o lead TOCA pra agendar\nNUNCA escreva horários em texto nem pergunte 'manhã ou tarde'; deixe o menu cuidar disso. O toque do lead JÁ faz o agendamento, não reconfirme\nSe o lead pedir outro horário use `reschedule_appointment`; pra cancelar, `cancel_appointment`\nSe o lead preferir falar com uma pessoa agora ou travar, chame `transfer_to_user` ou `round_robin_user` e avise que um especialista vai assumir\nNunca encerre sem agendamento OU handoff. Sempre dê o próximo passo concreto"
   },
   {
     "title": "Fase 5 · Tratamento de objeções",
